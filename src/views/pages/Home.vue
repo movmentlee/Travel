@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <Index msg="Welcome to Your Vue.js App"/>
+  <div>
+    <home-header/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Index from '@/components/Index.vue'
+import HomeHeader from '@/components/home/Header.vue'
 
 export default {
   name: 'home',
   components: {
-    Index
+    HomeHeader
   }
 }
 </script>
