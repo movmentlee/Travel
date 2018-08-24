@@ -9,6 +9,7 @@
         <p class="icon-desc">{{item.desc}}</p>
     	</div>
     </swiper-slide>
+    <div class="swiper-pagination"  slot="pagination"></div>
   </swiper>
   </div>
 </template>
@@ -19,6 +20,7 @@ export default {
   data () {
     return {
       swiperOption: {
+        pagination: '.swiper-pagination',
         autoplay: false
       },
       iconList: [{
@@ -83,9 +85,11 @@ export default {
 <style lang="stylus" scoped>
 @import '../../assets/styles/varibles.styl'
 @import '../../assets/styles/mixins.styl'
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets
+  bottom: -2px 
 .icons >>> .swiper-container
   height: 0
-  padding-bottom: 50%
+  padding-bottom: 52%
   .icon
     position: relative
     overflow: hidden
