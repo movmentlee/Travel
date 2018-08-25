@@ -4,7 +4,9 @@
       <div class="iconfont back-icon">&#xe720;</div>
     </div>
     <div class="header-input"><span class="iconfont">&#xe741;</span>输入你想去的地方</div>
-    <div class="header-right"><span class="iconfont unfold-icon">&#xe749;</span>{{this.city}}</div>
+    <router-link to="/city">
+      <div class="header-right"><span class="iconfont unfold-icon">&#xe749;</span>{{this.city}}</div>
+    </router-link>
   </div>
 </template>
 
@@ -44,6 +46,7 @@ export default {
       width: 1.24rem
       float: right
       text-align: center
+      color: #fff
       .unfold-icon
         font-size: .4rem
         padding-right: .04rem
