@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for='item of recommendList' :key='item.id'>
+      <li class="item border-bottom" v-for='item of list' :key='item.id'>
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -20,36 +20,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data() {
-    return {
-      recommendList:[
-        {
-          id:'001',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1702/36/36b399f9cb55e519a3.water.jpg_200x200_0542ec91.jpg',
-          title: '西樵山国艺影视城',
-          desc: '南海区',
-          price: '80'
-        },{
-          id:'002',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1807/2d/2df1b9b20956de54a3.img.jpg_200x200_78c5b146.jpg',
-          title: '九道谷漂流',
-          desc: '南海区',
-          price: '180'
-        },{
-          id:'003',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1807/77/77570cc3ebf7d9d8a3.img.jpg_200x200_d36ff68e.jpg',
-          title: '长鹿休闲度假农庄',
-          desc: '顺德区',
-          price: '300'
-        },{
-          id:'004',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1504/dc/dcad57d18a2143f7.water.jpg_200x200_d877fcb3.jpg',
-          title: '龙涛湾水上乐园',
-          desc: '南海区',
-          price: '280'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
