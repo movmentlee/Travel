@@ -1,0 +1,120 @@
+{
+  "ret": true,
+  "data": {
+    "city": "佛山",
+    "swiperList": [
+        {
+          "id": "001",
+          "imgUrl": "@/assets/images/king_slanding.png"
+        },
+        {
+          "id": "002",
+          "imgUrl": "@/assets/images/winterfell.png"
+        },
+        {
+          "id": "003",
+          "imgUrl": "@/assets/images/casterly_rock.png"
+        },
+        {
+          "id": "004",
+          "imgUrl": "@/assets/images/red_keep.png"
+        },
+        {
+          "id": "005",
+          "imgUrl": "@/assets/images/the_wall.png"
+        }
+      ],
+    "iconList": [{
+        "id": "001",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },{
+        "id": "002",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "desc": "动植物园"
+      },{
+        "id": "003",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "desc": "自然风光"
+      },{
+        "id": "004",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+        "desc": "全部娱乐"
+      },{
+        "id": "005",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },{
+        "id": "006",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "desc": "动植物园"
+      },{
+        "id": "007",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "desc": "自然风光"
+      },{
+        "id": "008",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+        "desc": "全部娱乐"
+      },{
+        "id":"009",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票景点门票景点门票"
+      },{
+        "id": "010",
+        "iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      }],
+    "recommendList":[
+        {
+          "id":"001",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1702/36/36b399f9cb55e519a3.water.jpg_200x200_0542ec91.jpg",
+          "title": "西樵山国艺影视城",
+          "desc": "南海区",
+          "price": "80"
+        },{
+          "id":"002",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1807/2d/2df1b9b20956de54a3.img.jpg_200x200_78c5b146.jpg",
+          "title": "九道谷漂流",
+          "desc": "南海区",
+          "price": "180"
+        },{
+          "id":"003",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1807/77/77570cc3ebf7d9d8a3.img.jpg_200x200_d36ff68e.jpg",
+          "title": "长鹿休闲度假农庄",
+          "desc": "顺德区",
+          "price": "300"
+        },{
+          "id":"004",
+          "imgUrl":"http://img1.qunarzz.com/sight/p0/1504/dc/dcad57d18a2143f7.water.jpg_200x200_d877fcb3.jpg",
+          "title": "龙涛湾水上乐园",
+          "desc": "南海区",
+          "price": "280"
+        }
+      ],
+     "weekendList":[
+        {
+          "id":"001",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1508/f8/cadd4e229d3402.jpg_r_640x214_c38fb221.jpg",
+          "title": "佛山必游TOP10",
+          "desc": "走进佛山河网密布，生态优美的岭南水乡"
+        },{
+          "id":"002",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg",
+          "title": "欢乐长隆",
+          "desc": "世界欢乐汇聚长隆"
+        },{
+          "id":"003",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1511/f7/90c1c5f6f3dd59.jpg_r_640x214_3cb4974e.jpg",
+          "title": "河源必游TOP10",
+          "desc": "走进客家古邑，感受万绿河源"
+        },{
+          "id":"004",
+          "imgUrl":"http://img1.qunarzz.com/sight/source/1505/4a/ac007012d54bd4.jpg_r_640x214_eefa6ade.jpg",
+          "title": "龙涛湾水上乐园",
+          "desc": "毓秀山水，继续着四季轮回的交替"
+        }
+      ]
+
+  }
+}
