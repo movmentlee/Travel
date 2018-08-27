@@ -1,17 +1,15 @@
 <template>
   <ul class="list">
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
+    <li class="item" v-for="(item,key) of bet" :key="key">{{key}}</li>
   </ul>
 </template>
 
 <script>
 export default {
-  name: 'CityAlphaBet'
+  name: 'CityAlphaBet',
+  props: {
+    bet: Object
+  }
 }
 </script>
 
@@ -27,6 +25,8 @@ export default {
     bottom: 0
     width: .4rem
     .item
+      font-size: .18rem
       text-align: center
-      line-height: .4rem
+      line-height: .3rem
+      color: $mainColor
 </style>
