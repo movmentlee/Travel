@@ -27,7 +27,7 @@ export default {
       timer: null
     }
   },
-  update () {
+  updated () {
     this.startY = this.$refs['A'][0].offsetTop
   },
   computed: {
