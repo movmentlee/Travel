@@ -16,6 +16,7 @@ import HomeIcons from '@/components/home/Icons.vue'
 import HomeRecommend from '@/components/home/Recommend.vue'
 import HomeWeekend from '@/components/home/Weekend.vue'
 import axios from 'axios'
+import { mapState } from 'vuex'
 
 import winterfell from '@/assets/images/winterfell.png'
 import king_slanding from '@/assets/images/king_slanding.png'
@@ -39,17 +40,20 @@ export default {
       swiperList: [],
       iconList: [],
       recommendList: [],
-      weekendList: []
+      weekendList: [],
+      lastCity: ''
     }
+  },
+  computed: {
+    ...mapState(['city'])
   },
   methods: {
     getHomeInfo(){
-      axios.get('/api/homeData').then(this.getHomeInfoSucc).catch(function(err){
+      axios.get('/api/homeData?city=' + this.city).then(this.getHomeInfoSucc).catch(function(err){
         console.log(err);
       })
     },
     getHomeInfoSucc(res){
-      //console.log(res)
       res = res.data.data;
       if(res.ret && res.data){
         const data = res.data;
@@ -64,7 +68,14 @@ export default {
     }
   },
   mounted () {
+    this.lastCity = this.city
     this.getHomeInfo()
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>
