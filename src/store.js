@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import state from './state'
+import action from './action'
+import mutations from './mutation'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-    city: '佛山'
-  },
-  mutations: {
-
-  },
-  actions: {
-
-  }
+  state: state,
+  mutations: mutations,
+  actions: action
 })
